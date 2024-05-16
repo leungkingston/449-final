@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Creation</title>
+</head>
+<body>
+    <h1>Add a new staff member</h1>
+    <form action="/staff/create" method="POST">
+        <label for="jsondata">Staff JSON:</label><br>
+        <textarea id="jsondata" name="jsondata" rows="10" cols="50" placeholder='{"name": "michael", "occupation": "server", "phone": "1234567890", "email": "mic@gmail.com", "age": 32}'></textarea><br>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>

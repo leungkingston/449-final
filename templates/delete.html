@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Staff</title>
+</head>
+<body>
+    <h1>Are you sure you want to delete Staff Member ID: {{staff_id}}?</h1>
+    <form id="deleteForm" action="/staff/{{ staff_id }}/delete" method="POST">
+        <input type="hidden" name="_method" value="POST">
+        <button type="submit">Delete Staff Member {{staff_id}}</button>
+    </form>
+</body>
+</html>
